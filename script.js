@@ -9,9 +9,9 @@ form.addEventListener("submit", function(val) {
     var suggestion = document.querySelector(".sug")
 
     if(height === " " || height<0 || isNaN(height)) {
-        result.innerHTML = `Please enter valid Height ${height}`
+        result.innerHTML = `Please enter valid Height`
     }else if(weight === " " || weight<0 || isNaN(weight)) {
-        result.innerHTML = `Please enter valid Height ${weight}`
+        result.innerHTML = `Please enter valid Weight`
     }
     else {
         var BMI = (weight/((height*height)/10000)).toFixed(2)
